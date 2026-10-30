@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Student Registration</h1>
+
+    <form onsubmit="return registerUser()">
+        <p><input type="text" id="name" placeholder="Full Name"></p>
+        <p><input type="email" id="email" placeholder="Email Address"></p>
+        <p><input type="password" id="password" placeholder="Password"></p>
+
+        <p>
+            <select id="course">
+                <option value="">Select Course</option>
+                <option>Java Programming</option>
+                <option>Python Programming</option>
+                <option>Web Development</option>
+                <option>Database Management</option>
+            </select>
+        </p>
+
+        <button type="submit">Register</button>
+        <p id="message"></p>
+    </form>
+
+    <p>Already registered? <a href="login.html">Login</a></p>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Portal</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

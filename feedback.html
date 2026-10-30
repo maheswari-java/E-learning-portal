@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Student Feedback</h1>
+    <p>Tell us about your learning experience.</p>
+
+    <form onsubmit="return submitFeedback()">
+
+        <p>
+            <input type="text" id="studentName"
+                   placeholder="Your Name">
+        </p>
+
+        <p>
+            <select id="rating">
+                <option value="">Select Rating</option>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Average</option>
+                <option value="1">Poor</option>
+            </select>
+        </p>
+
+        <p>
+            <textarea id="feedbackText"
+                      placeholder="Write your feedback"></textarea>
+        </p>
+
+        <button type="submit">Submit Feedback</button>
+        <p id="feedbackResult"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Portal</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

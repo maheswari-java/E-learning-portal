@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Quiz - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="progress.html">Progress</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Programming Quiz</h1>
+    <p>Answer the following questions.</p>
+
+    <form onsubmit="return checkQuiz()">
+
+        <h3>1. Which language runs in a web browser?</h3>
+        <input type="radio" name="q1" value="a"> Java
+        <input type="radio" name="q1" value="b"> JavaScript
+        <input type="radio" name="q1" value="c"> SQL
+
+        <h3>2. Which keyword creates a Java class?</h3>
+        <input type="radio" name="q2" value="a"> class
+        <input type="radio" name="q2" value="b"> define
+        <input type="radio" name="q2" value="c"> create
+
+        <h3>3. Which language is commonly used for databases?</h3>
+        <input type="radio" name="q3" value="a"> HTML
+        <input type="radio" name="q3" value="b"> CSS
+        <input type="radio" name="q3" value="c"> SQL
+
+        <p><button type="submit">Submit Quiz</button></p>
+    </form>
+
+    <h3 id="result"></h3>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Portal</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Student Login</h1>
+
+    <form onsubmit="return loginUser()">
+        <p><input type="email" id="loginEmail" placeholder="Email Address"></p>
+        <p><input type="password" id="loginPassword" placeholder="Password"></p>
+
+        <button type="submit">Login</button>
+        <p id="loginMessage"></p>
+    </form>
+
+    <p>New student? <a href="register.html">Register here</a></p>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Portal</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

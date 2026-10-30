@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    background: linear-gradient(135deg, #eef5ff, #f8faff, #e3f2fd);
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background: #243b55;
+    color: white;
+}
+
+header h2 {
+    margin: 5px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd166;
+    transform: translateY(-3px);
+}
+
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #ffd166;
+    transition: width 0.3s;
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #dceeff;
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+section {
+    padding: 30px 20px;
+    text-align: center;
+    animation: appear 0.8s ease;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+   
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ddd;
+    transition: all 0.4s ease;
+    border: 1px solid #dce6f1;
+    border-radius: 15px;
+    
+}
+
+.card:hover{
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(36,59,85,0.2);
+    border-color: #3498db;
+    background: white;
+}
+
+.card a,
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #243b55;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    background: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button, .btn, .card a{
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(36,59,85,0.2);
+}
+
+button:hover,
+.btn:hover,
+.card a:hover {
+    background: #168aad;
+    box-shadow: 0 0 18px rgba(52,152,219,0.7);
+    transform: scale(1.08);
+}
+
+input,
+select,
+textarea {
+    width: 280px;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+progress {
+    width: 200px;
+    height: 18px;
+    accent-color: #168aad;
+    border-radius: 20px;
+}
+
+.progress-container .card:hover progress{
+    filter: drop-shadow(0 0 5px #3498db);
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    background: linear-gradient(90deg, #162d50, #315b83, #162d50);
+    color: white;
+    box-shadow: 0 -4px 15px rgba(36,59,85,0.2);
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
+
+#card{
+     position:absolute;
+     top:21vh;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.video{
+    margin-left: 130px;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    flex:1;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 20px;
+}
+
+.progress-container .card{
+    width: 280px;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.progress-container progress{
+    width: 100%;
+    height: 20px;
+}
+
+@media(max-width: 600px){
+    .progress-container .card{
+        width: 100%;
+    }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1{
+    color: #243b55;
+    text-shadow: 2px 3px 5px rgba(36,59,85,0.15);
+    transition: 0.3s;
+}
+
+h1:hover{
+    color: #168aad;
+}

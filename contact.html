@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>LearnHub</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<section>
+    <h1>Contact Us</h1>
+    <p>Have a question? Send us a message.</p>
+
+    <form onsubmit="return sendMessage()">
+        <p><input type="text" id="contactName" placeholder="Your Name"></p>
+        <p><input type="email" id="contactEmail" placeholder="Your Email"></p>
+        <p><textarea id="contactMessage" placeholder="Your Message"></textarea></p>
+
+        <button type="submit">Send Message</button>
+        <p id="contactResult"></p>
+    </form>
+
+    <h3>Contact Information</h3>
+    <p>Email: support@learnhub.com</p>
+    <p>Working Hours: Monday - Friday</p>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Portal</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
